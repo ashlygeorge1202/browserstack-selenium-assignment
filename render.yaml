@@ -1,14 +1,9 @@
 services:
   - type: web
-    name: my-web-app
+    name: my-free-web-app
     env: node
-    plan: starter
+    plan: free                  # <-- IMPORTANT
+    branch: main
     buildCommand: "npm install"
     startCommand: "npm start"
-    branch: main
-    region: oregon
-
-databases:
-  - name: my-db
-    plan: starter
-  
+    autoDeploy: true
