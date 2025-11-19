@@ -11,4 +11,4 @@ services:
 databases:
   - name: my-db
     plan: starter
-    engine: postgres
+  
